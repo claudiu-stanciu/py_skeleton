@@ -4,7 +4,7 @@ run:
 	poetry run python -m py_skeleton
 
 test:
-	poetry run pytest --cov=py_skeleton tests
+	poetry run pytest --cov=py_skeleton
 
 env:
 	poetry install
