@@ -9,7 +9,10 @@ testpaths = [
     "tests",
 ]
 
-[tool.flake8]
+[tool.mypy]
+python_version = 3.9
+warn_return_any = true
+warn_unused_configs = true
 
 
 [tool.poetry]
@@ -28,6 +31,7 @@ black = "^21.6b0"
 flake8 = "^3.9.2"
 pytest-asyncio = "^0.15.1"
 pre-commit = "^2.13.0"
+mypy = "^0.910"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
